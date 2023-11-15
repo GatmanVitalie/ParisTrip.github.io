@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            /* culoarea fundalului */
+            height: 100vh;
+        }
+
+        .image-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        .content-over-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .content-below {
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-content">
+        <div class="image-container">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/6468ea7be5b5bee9d12e9948/eiffel-tour-and-Paris-cityscape/0x0.jpg?format=jpg&height=1835&width=2767"
+                alt="Imagine">
+            <div class="content-over-image">
+                <h1>Excursie în Paris</h1>
+                <button onclick="scrollToContent()">Mai multe detalii</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-below">
+        <p>Lorem ipsum dolor sit amet nobis sanctus...</p>
+        <!-- Restul conținutului -->
+    </div>
+
+    <script>
+        function scrollToContent() {
+            // derulează pagina până la conținutul de mai jos
+            window.scrollTo({
+                top: document.querySelector('.content-below').offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
