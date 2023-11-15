@@ -40,21 +40,51 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
+
         }
 
-        .button-container {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
+        .content-over-image h1 {
+            color: #000000;
+            font-size: 10vh;
+        }
+
+        .content-over-image button {
+            padding: 10px 20px;
+            background-color: #ff319f;
+            color: #ffffff;
+            font-size: 4vh;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content-over-image button:hover {
+            background-color: #FF69B4;
         }
 
         .content-below {
             background-color: white;
             padding: 20px;
             box-sizing: border-box;
+        }
+
+
+
+        .content-below {
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            
+        }
+        
+        .textjos
+        {
+            width: 80%;
+            font-size: 4vh;
         }
     </style>
 </head>
@@ -73,6 +103,7 @@
     </div>
 
     <div class="content-below">
+        <div class="textjos">
         <p>Lorem ipsum dolor sit amet nobis sanctus. Vel est et dolor gubergren. Dolores aliquyam quis amet tempor et
             sadipscing clita lobortis lorem et est duis sed consetetur dolore amet. Clita sadipscing est kasd consetetur
             eum elitr eum duo et. Voluptua ut lorem est consetetur nonumy eos takimata aliquyam sit kasd laoreet at erat
@@ -83,6 +114,7 @@
             et. Aliquyam at sit amet ea invidunt facilisi volutpat lorem. Euismod consequat tempor et duis vero ea velit
             ea eirmod justo elit nisl sit liber sed sit tempor nonumy.</p>
         <!-- Restul conținutului -->
+    </div>
     </div>
 
     <script>
